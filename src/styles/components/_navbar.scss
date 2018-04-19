@@ -1,0 +1,20 @@
+.navbar {
+  background: $dark-gray;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-collapse {
+  float: right;
+}
+
+.navbar-default .navbar-brand {
+  color: $off-white;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: $off-white;
+  &:hover {
+    color: white;
+  }
+}

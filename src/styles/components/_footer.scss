@@ -1,0 +1,31 @@
+.footer {
+  bottom: 0;
+  height: 7rem;
+  position: fixed;
+  width: 100%;
+}
+
+.footer-container {
+  margin: 0 auto;
+  padding: 0 $m-size;
+  max-width: 140rem;
+}
+
+.footer-email {
+ padding-top: 12.5px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-github {
+  padding-top: 10px;
+  span {
+    color: $off-white;
+  }
+}
+.footer-weather__error {
+  padding-top: 12.5px;
+}
