@@ -17,7 +17,7 @@ export default class Footer extends React.Component {
       navigator.geolocation.getCurrentPosition( position => {
         var lat = position.coords.latitude;
 			  var lon = position.coords.longitude;
-        var url = `http://api.openweathermap.org/data/2.5/weather?lat=29.999765600000003&lon=-95.1744903&APPID=3e7852f4006e3eced1500a5256479cbd`;
+        var url = `https://api.openweathermap.org/data/2.5/weather?lat=29.999765600000003&lon=-95.1744903&APPID=3e7852f4006e3eced1500a5256479cbd`;
         axios.get(url).then(res => {
       
           this.setState({
