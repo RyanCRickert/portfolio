@@ -1,0 +1,27 @@
+.portfolio-container {
+  margin: 0 auto;
+  padding: 0 $m-size 7rem;
+  max-width: 120rem;
+}
+
+.portfolio-header {
+  color: silver;
+  font-size: 10rem;
+  text-align: center;
+}
+
+.portfolio-item {
+  color: $off-white;
+  display: inline-block;
+  height: 400px;
+  text-align: center;
+  width: 50%;
+  div{
+    text-align: center;
+  }
+}
+
+.portfolio-item__img {
+  max-height: 300px;
+  max-width: 100%;
+}

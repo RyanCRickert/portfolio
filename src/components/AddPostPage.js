@@ -32,7 +32,7 @@ export class AddPostPage extends React.Component {
   render() {
     return (
       <div>
-        <div className="content-container">
+        <div className="content-container blog-container">
           {this.state.loggedIn ? <PostForm onSubmit={this.onSubmit} /> : <SignInForm />}
         </div>
       </div>

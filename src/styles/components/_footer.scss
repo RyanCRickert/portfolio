@@ -1,4 +1,5 @@
 .footer {
+  background: $dark-blue;
   bottom: 0;
   height: 7rem;
   position: fixed;
@@ -12,7 +13,8 @@
 }
 
 .footer-email {
- padding-top: 12.5px;
+ padding-top: 25px;
+ user-select: none;
 }
 
 .footer-main {
@@ -21,11 +23,25 @@
 }
 
 .footer-github {
-  padding-top: 10px;
+  padding-top: 20px;
   span {
     color: $off-white;
+    &:hover {
+      color: lightblue;
+    }
   }
 }
+
+.footer-weather {
+  padding-top: 13px;
+  user-select: none;
+}
+
 .footer-weather__error {
-  padding-top: 12.5px;
+  padding-top: 30px;
+}
+
+.footer-weather__scale {
+  color: $light-blue;
+  cursor: pointer;
 }

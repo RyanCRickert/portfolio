@@ -7,9 +7,10 @@ html {
 }
 
 body {
-    background: linear-gradient($gray, $dark-gray);
+    background: linear-gradient($gray, $dark-gray) no-repeat center center fixed;
+    background-size: cover;
     color: $off-white;
-    height: 100vh;
+    height: 100%;
     font-family:  Helvetica, Arial, sans-serif;
     font-size: $m-size;
     line-height: 1.6;

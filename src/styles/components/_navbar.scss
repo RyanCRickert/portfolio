@@ -2,6 +2,9 @@
   background: $dark-gray;
   border: none;
   border-radius: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar-collapse {
