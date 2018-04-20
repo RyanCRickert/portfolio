@@ -62,7 +62,7 @@ export default class Footer extends React.Component {
           <div className="footer-container">
             <div className="footer-main">
             <div className="footer-email">
-              Email: <a href="mailto: RyanCRickert@gmail.com">RyanCRickert@gmail.com</a>
+              <a href="mailto: RyanCRickert@gmail.com">RyanCRickert@gmail.com</a>
             </div>
               {this.state.success ?
               <div className="footer-weather">In {this.state.city} it is currently {this.state.temp}°{this.state.scale === "F" ?
