@@ -8,6 +8,7 @@ import HomePage from "../components/HomePage";
 import NavBar from "../components/NavBar";
 import NotFoundPage from "../components/NotFoundPage";
 import PortfolioPage from "../components/PortfolioPage";
+import IndecisionPage from "../indecision/components/IndecisionApp";
 
 export const history = createHistory();
 
@@ -19,7 +20,8 @@ const AppRouter = () => (
 				<Route path="/" component={HomePage} exact/>
 				<Route path="/blog" component={BlogPage} />
 				<Route path="/newpost" component={AddPostPage} />
-				<Route path="/portfolio" component={PortfolioPage} />
+				<Route path="/portfolio" component={PortfolioPage}/>
+				<Route path="/indecision" component={IndecisionPage}/>
 				<Route component={NotFoundPage} />
 			</Switch>
 			<Footer />

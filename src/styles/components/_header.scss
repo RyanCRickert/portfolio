@@ -1,0 +1,25 @@
+.header-indecision {
+    background: $off-black;
+    color: white;
+    margin-bottom: $m-size;
+    padding: $m-size 0;
+    text-align: center;
+}
+
+.header__title-indecision {
+    font-size: $l-size;
+    margin: 0;
+}
+
+.header__subtitle-indecision {
+    color: $off-white;
+    font-size: $m-size;
+    font-weight: 500;
+    margin: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .header-indecision {
+        margin-bottom: $xl-size;
+    }
+}

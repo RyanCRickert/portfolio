@@ -4,7 +4,27 @@
   max-width: 120rem;
 }
 
+.portfolio-done {
+  display: inline-block;
+  height: 30rem;
+  width: 33.33%
+}
+
+.portfolio-done__img {
+  height: 100%;
+  float: left;
+  padding: 0 2rem;
+  width: 100%;
+}
+
 .portfolio-header {
+  color: silver;
+  font-size: 10rem;
+  margin: 2rem 0 6.7rem;
+  text-align: center;
+}
+
+.portfolio-header__top {
   color: silver;
   font-size: 10rem;
   text-align: center;
@@ -12,16 +32,47 @@
 
 .portfolio-item {
   color: $off-white;
-  display: inline-block;
-  height: 400px;
+  height: 40rem;
+  margin-bottom: 10rem;
   text-align: center;
   width: 50%;
   div{
-    text-align: center;
+    text-align: left;
   }
 }
 
+.portfolio-item__text {
+  height: 10rem;
+  margin-top: 3rem;
+  padding: 0 $s-size;
+}
+
 .portfolio-item__img {
-  max-height: 300px;
+  height: 30rem;
   max-width: 100%;
+}
+
+.portfolio-list {
+  display: inline-block;
+  div:nth-child(odd) {
+    float: left;
+  }
+  div:nth-child(even) {
+    float: right;
+  }
+}
+
+.portfolio-skill {
+  width: 50%;
+}
+
+.portfolio-skill__list {
+  display: inline-block;
+  width: 100%;
+  li:nth-child(odd) {
+    float: left;
+  }
+  li:nth-child(even) {
+    float: right;
+  }
 }

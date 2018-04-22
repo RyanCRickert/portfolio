@@ -3,7 +3,7 @@
   bottom: 0;
   height: 7rem;
   position: fixed;
-  width: 100%;
+  width: 100vw;
 }
 
 .footer-container {
@@ -13,8 +13,11 @@
 }
 
 .footer-email {
- padding-top: 25px;
- user-select: none;
+  padding-top: 25px;
+  user-select: none;
+  a {
+    color: $lighter-blue;
+  }
 }
 
 .footer-main {
@@ -42,6 +45,9 @@
 }
 
 .footer-weather__scale {
-  color: $light-blue;
+  color: $lighter-blue;
   cursor: pointer;
+  &:hover{
+    color: $lighter-blue;
+  }
 }

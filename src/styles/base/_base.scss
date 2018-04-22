@@ -1,29 +1,37 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    background: linear-gradient(#222, #444) no-repeat center center fixed;
-    background-size: cover;
-    color: $off-white;
-    height: 100%;
-    font-family:  Helvetica, Arial, sans-serif;
-    font-size: $m-size;
-    line-height: 1.6;
+  background: linear-gradient(#222, #444) no-repeat center center fixed;
+  background-size: cover;
+  color: $off-white;
+  height: 100%;
+  font-family:  Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  line-height: 1.6;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 button:disabled {
-    cursor: default;
+  cursor: default;
 }
 
 .is-active {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 6px;
+}
 }
