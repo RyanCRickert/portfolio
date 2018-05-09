@@ -47,6 +47,7 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "to-json": "^0.5.0-prerelease",
+    "url-loader": "^1.0.1",
     "uuid": "^3.2.1",
     "validator": "^9.4.1",
     "webpack": "^4.4.1",

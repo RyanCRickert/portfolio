@@ -7,7 +7,7 @@ export default (props) => (
   <div className="portfolio-container">
       <div>
         <h1 className="portfolio-header__top">
-          Things I've Built
+          What I've Built
         </h1>
         <div className="portfolio-list">
           {works.map((work) => (
@@ -17,7 +17,7 @@ export default (props) => (
       </div>
       <div>
         <h1 className="portfolio-header">
-          Things I've Accomplished
+          What I've Accomplished
         </h1>
         <div>
           <div className="portfolio-done">

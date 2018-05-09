@@ -4,7 +4,7 @@ import moment from "moment";
 import numeral from "numeral";
 
 export default ({ id, title, description, createdAt }) => (
-    <div>
+    <div className="list-item">
       <div className="list-item__post">
         <h3 className="list-item__title">{title}</h3>
         <span className="list-item__sub-title">{moment(createdAt).format("MMMM Do, YYYY")}</span>

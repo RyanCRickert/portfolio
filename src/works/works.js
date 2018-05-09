@@ -1,7 +1,14 @@
 export default [{
+  name: "Community Cookbook (Web App)",
+  url: "https://communitycookbook.herokuapp.com/",
+  description: "Using the basic framework from Expensify, I created a new app in which authorized users can create and edit recipes for all to see and share.  This project helped to further my knowledge of Firebase and having children communicate with parent components.",
+  classN: "cookbook",
+  src: "images/portfolio/cookbook.png"
+},
+{
   name: "Expensify (Web App)",
   url: "https://expensify-application.herokuapp.com",
-  description: "This is the other application I built in the course.  Along with furthering my understanding for all things React, working on this project introduced me to using Firebase.  Along with configuring calls to the database, I also learned how to filter calls made to the database so that incorrect data would not be accepted.",
+  description: "This is the second application I built in the ReactJS course.  Along with furthering my understanding for all things React, working on this project introduced me to using Firebase.  Along with configuring calls to the database, I also learned how to filter calls made to the database so that incorrect data would not be accepted.",
   classN: "expensify",
   src: "images/portfolio/expensify.png"
 },
@@ -30,7 +37,7 @@ export default [{
 {
   name: "Chat App (NodeJS)",
   url: "https://thawing-fortress-91926.herokuapp.com",
-  description: "This is a program which I wrote in the NodeJS course.  While it is just a simple chat app, it showed me the basics of how the backend development works.",
+  description: "This is a program which I wrote in the NodeJS course.  While it is just a simple chat app, it showed me the basics of how the backend development works.  I went through the process of setting up the different http response codes and tested them using Postman.",
   classN: "node",
   src: "images/portfolio/node.png"
 }]

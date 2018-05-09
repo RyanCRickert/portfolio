@@ -1,5 +1,6 @@
 .portfolio-container {
   margin: 0 auto;
+  opacity: 1;
   padding: 0 $m-size 7rem;
   max-width: 120rem;
 }
@@ -7,7 +8,11 @@
 .portfolio-done {
   display: inline-block;
   height: 30rem;
-  width: 33.33%
+  width: 33.33%;
+
+  @media (max-width: $desktop-breakpoint) {
+    height: 10rem;
+  }
 }
 
 .portfolio-done__img {
@@ -22,34 +27,59 @@
   font-size: 10rem;
   margin: 2rem 0 6.7rem;
   text-align: center;
+
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 4.4rem;
+    margin-bottom: 1.4rem;
+  }
 }
 
 .portfolio-header__top {
   color: silver;
   font-size: 10rem;
+  margin: 0 0 6.7rem;
+  padding-top: 15rem;
   text-align: center;
+
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 4.4rem;
+    margin-bottom: 1.4rem;
+  }
 }
 
 .portfolio-item {
   color: $off-white;
-  height: 40rem;
+  height: 45rem;
   margin-bottom: 10rem;
   text-align: center;
   width: 50%;
-  div{
+  div {
     text-align: left;
+  }
+  h2 {
+    font-size: 1.6rem;
   }
 }
 
 .portfolio-item__text {
-  height: 10rem;
+  background: rgba($color: #000000, $alpha: 0.6);
+  border-radius: 5px;
   margin-top: 3rem;
   padding: 0 $s-size;
+
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 1.3rem;
+
+  }
 }
 
 .portfolio-item__img {
   height: 30rem;
   max-width: 100%;
+
+  @media (max-width: $desktop-breakpoint) {
+    height: 15rem;
+  }
 }
 
 .portfolio-list {
@@ -64,9 +94,15 @@
 
 .portfolio-skill {
   width: 50%;
+
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 1.4rem;
+  }
 }
 
 .portfolio-skill__list {
+  background: rgba($color: #000000, $alpha: 0.6);
+  border-radius: 5px;
   display: inline-block;
   width: 100%;
   li:nth-child(odd) {

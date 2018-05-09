@@ -1,5 +1,5 @@
 .me {
-  margin-top: 8rem;
+  margin-top: 15rem;
 }
 
 .me-picture {
@@ -8,7 +8,17 @@
 }
 
 .me-info {
-  padding-left: 3rem;
+  background: rgba($color: $gray, $alpha: 0.75);
   float: right;
+  margin-bottom: 4rem;
+  padding: 2rem;
   width: 66.66%;
+
+  @media (max-width: $desktop-breakpoint) {
+    width: 100%;
+  }
+}
+
+.me-picture-small {
+ float: left;
 }

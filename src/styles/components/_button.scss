@@ -1,6 +1,7 @@
 .button {
-  background: $light-blue;
+  background: none;
   border: none;
+  border-radius: 10px;
   color: white;
   display: inline-block;
   font-size: 2.2rem;
@@ -8,12 +9,35 @@
   line-height: 1;
   padding: $s-size;
   text-decoration: none;
+  transition: color 0.5s ease-in-out;
+  &:hover {
+    color: $gray;
+    text-decoration: none;
+  }
 }
 
-.button--link {
-  background: none;
+.button-active {
+  animation: flash 5s infinite;
+  background: rgba(black, 0.5);
+  color: white;
+  transition: color 0.5s ease-in-out;
 }
 
-.button--secondary {
-  background: #888;
+@keyframes flash {
+0% {
+  color: $gray;
+  text-decoration: none;
+}
+25% {
+  color: white;
+  text-decoration: none;
+}
+75% {
+  color: white;
+  text-decoration: none;
+}
+100% {
+  color: $gray;
+  text-decoration: none;
+}
 }

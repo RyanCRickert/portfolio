@@ -1,12 +1,12 @@
 import React from "react";
-
-const me = "https://scontent.fhou1-2.fna.fbcdn.net/v/t1.0-9/29597641_10101369055595404_3762179693395066461_n.jpg?_nc_cat=0&oh=528f4387f0373b9171f4ed071e16f1b4&oe=5B617880";
+import me from "../../public/images/me.png";
 
 export default () => (
   <div className="content-container">
     <div className="me">
-        <img alt="Picture of me and my family" className="me-picture" src={me} />
+        <img alt="Picture of me and my family" className="me-picture show-for-larger" src={me} />
       <div className="me-info">
+        <img alt="Picture of me and my family" className="me-picture show-for-mobile me-picture-small" src={me} />
         My name is Ryan Rickert and I am a React web developer with a bit of NodeJS experience.  
         I received my bachelor's degree in Chemistry from the University of Houston Downtown in 2015.  A few months later my first son was born 
         and soon after I found a lab tech position.  After about a year, the demanding schedule of 12 hour day/night shifts while working mostly weekends 

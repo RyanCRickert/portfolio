@@ -8,38 +8,19 @@
 }
 
 .list-body {
-  margin-bottom: $m-size;
+  background: rgba($color: $dark-gray, $alpha: 0.7);
+  margin-bottom: 8rem;
   padding: 0 $m-size;
-
-  @media (min-width: $desktop-breakpoint) {
-    margin-bottom: $l-size;
-  }
 }
 
 .list-item {
-  border: 1px solid darken($off-white, 10%);
-  border-top: none;
-  color: $dark-gray;
-  display: flex;
-  flex-direction: column;
-  padding: $s-size;
-  text-decoration: none;
-  transition: background 0.3s ease;
-  &:hover {
-    background: $off-white;
-  }
-
-  @media (min-width: $desktop-breakpoint) {
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: $m-size;
-  }
+  border-bottom: 5px solid rgba($color: $off-white, $alpha: 0.8);
+  padding-bottom: 1rem;
 }
 
 .list-item__title {
   margin: 0;
-  word-break: break-all;
+
 }
 
 .list-item__sub-title {
