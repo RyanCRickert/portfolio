@@ -3,7 +3,6 @@ import scrollToComponent from 'react-scroll-to-component';
 
 import PortfolioItem from "./PortfolioItem";
 import arrow from "../../public/images/arrow.png";
-import me from "../../public/images/me.jpg";
 import node from "../../public/images/node.jpg";
 import react from "../../public/images/react.jpg";
 import skills from "../skills/skills";
