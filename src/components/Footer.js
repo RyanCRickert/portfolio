@@ -64,11 +64,6 @@ export default class Footer extends React.Component {
             <div className="footer-email">
               <a href="mailto: RyanCRickert@gmail.com">RyanCRickert@gmail.com</a>
             </div>
-              {this.state.success ?
-              <div className="footer-weather show-for-larger">In {this.state.city} it is currently {this.state.temp}°{this.state.scale === "F" ?
-                <span className="footer-weather__scale" onClick={this.changeTemperature}>F</span> :
-                <span className="footer-weather__scale" onClick={this.changeTemperature}>C</span>}.  Condition: {this.state.cond} <img src={`https://openweathermap.org/img/w/${this.state.icon}.png`} alt="Picture of current weather conditions" /></div> :
-              <div className="footer-weather">To enable local weather, please allow for geolocation.</div> }
             <div className="footer-github">
               <a href="https://github.com/RyanCRickert" target="_blank"><FontAwesome name="github" size="2x"/></a>
             </div>

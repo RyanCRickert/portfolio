@@ -1,9 +1,11 @@
 .header {
-  background: url("/images/header.png");
-  height: 11rem;
-  position: fixed;
-  width: 100vw;
-  top: 0;
+  background: $off-white;
+  border-radius: 0px 0px 5px 5px;
+  left:0;
+  margin: 0 auto;
+  max-width: 60rem;
+  position: absolute;
+  right: 0;
 }
 
 .header-container {
@@ -14,21 +16,36 @@
 
 .header-title {
   float: left;
+
+  a {
+    font-weight: 500;
+  }
 }
 
 .header-links {
- float: right;
+  display: inline-block;
+
+  span {
+    color: rgb$cool-blue;
+    font-size: 1.4em;
+    height: 2.2rem;
+    padding: $s-size;
+    transition: color 0.5s ease-in-out;
+
+    &:hover {
+      color: rgb(0, 50, 70);
+    }
+  }
 }
 
 .header-rickert {
-
+  color: $cool-blue;
 }
 
 .header-portfolio {
- float: left;
+
 }
 
 .header-blog {
- float: right;
- margin-left: 2rem;
+  color: $cool-blue;
 }

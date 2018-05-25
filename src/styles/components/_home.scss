@@ -1,24 +1,260 @@
-.me {
-  margin-top: 15rem;
-}
-
-.me-picture {
-  height: 100%;
-  width: 33.33%
-}
-
-.me-info {
-  background: rgba($color: $gray, $alpha: 0.75);
-  float: right;
-  margin-bottom: 4rem;
-  padding: 2rem;
-  width: 66.66%;
+.home-main {
+  background: url("/images/background.jpg");
+  color: $off-white;
+  height: 100vh;
+  padding: 35vh 0;
+  text-align: center;
 
   @media (max-width: $desktop-breakpoint) {
+    height: 33.3vh;
+    padding: 10vh 0;
+  }
+}
+
+.home-name {
+  font-size: 12.2rem;
+  font-weight: 500;
+
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 4.2rem;
+  }
+}
+
+.home-title {
+  font-size: 4rem;
+
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 1.6rem;
+  }
+}
+
+.home-about {
+  background: white;
+  display: flex;
+
+  @media (max-width: $desktop-breakpoint) {
+    flex-direction: column;
+  }
+}
+
+.home-about__left {
+  font-size: 4rem;
+  max-width: 17.5rem;
+  padding: $l-size $m-size $m-size;
+  position: relative;
+  width: 20%;
+
+  h2 {
+    margin: 0 0 0.5rem;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    margin: auto;
     width: 100%;
   }
 }
 
-.me-picture-small {
- float: left;
+.home-about__right {
+  padding: $l-size;
+  text-align: center;
+  width: 80%;
+
+  @media (max-width: $desktop-breakpoint) {
+    font-size: 1.4rem;
+    margin: auto;
+    padding: $s-size;
+    width: 100%;
+  }
+}
+
+.home-projects {
+  background: #e7e7e7;
+  padding: 1.5rem 0 4rem;
+  text-align: center;
+}
+
+.home-projects__item {
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.home-projects__list {
+  text-align: center;
+}
+
+.underline {
+ position: relative;
+}
+
+.underline::after {
+  background: $cool-blue;
+  content: "";
+  height: 2px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 75px;
+  top: 110%;
+}
+
+.underline__alt {
+  color: white;
+  position: relative;
+ }
+ 
+ .underline__alt::after {
+   background: rgb(0, 50, 70);
+   content: "";
+   height: 2px;
+   left: 0;
+   margin: 0 auto;
+   position: absolute;
+   right: 0;
+   width: 75px;
+   top: 110%;
+ }
+
+.home-education {
+  background: white;
+  padding: 1.5rem 0 2rem;
+  text-align: center;
+}
+
+.home-education__block {
+  border: 1px solid black;
+  padding: $m-size;
+  text-align: left;
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.home-skills {
+  background: $off-white;
+  padding: 1.5rem 0 2rem;
+  text-align: center;
+}
+
+.home-skills__list {
+  display: block;
+  margin-top: 1rem;
+}
+
+.home-skills__item {
+  background: $cool-blue;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: $off-white;
+  display: inline-block;
+  list-style: none;
+  margin: 0 0.5rem 1rem;
+  padding: 0.5rem;
+  user-select: none;
+
+  @media (max-width: $desktop-breakpoint) {
+    margin: 0 2rem 1rem;
+  }
+}
+
+.home-contact {
+  padding: 1.5rem 0 2rem;
+  text-align: center;
+}
+
+.home-contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-contact__input {
+  background: rgb(0, 50, 70);
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  height: 4rem;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+
+  @media (max-width: $desktop-breakpoint) {
+    margin: 0 2rem 2rem;
+  }
+}
+
+.home-contact__text {
+  background: rgb(0, 50, 70);
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  height: 10rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+
+  @media (max-width: $desktop-breakpoint) {
+    margin: 0 2rem 2rem;
+  }
+}
+
+.home-contact__button {
+  background: white;
+  border: 0;
+  border-radius: 5px;
+  color: $cool-blue;
+  font-weight: 500;
+  height: 3rem;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    box-shadow: 5px 5px rgba($color: black, $alpha: 0.6);
+  }
+
+  &:disabled {
+    box-shadow: none;
+    opacity: 0.3;
+  }
+
+  @media (max-width: $desktop-breakpoint) {
+    margin: 0 2rem 2rem;
+  }
+}
+
+::placeholder {
+  color: white;
+}
+
+.home-footer {
+  background: white;
+  display: flex;
+
+  @media (max-width: $desktop-breakpoint) {
+    flex-direction: column;
+  }
+}
+
+.home-footer__copyright {
+  margin: $l-size;
+
+  @media (max-width: $desktop-breakpoint) {
+    margin: $s-size;
+  }
+}
+
+.home-footer__arrow {
+  margin: $l-size;
+  text-align: center;
+
+  @media (max-width: $desktop-breakpoint) {
+    margin: $s-size;
+  }
+}
+
+.home-footer__message {
+  margin: $l-size;
+
+  @media (max-width: $desktop-breakpoint) {
+    margin: $s-size;
+  }
 }

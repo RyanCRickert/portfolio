@@ -69,9 +69,6 @@ export default class IndecisionApp extends React.Component {
 
     return (
       <div className="indecision">
-        <Header
-        subtitle={subtitle}
-        />
         <div className="container-indecision">
           <Action 
             hasOptions={this.state.options.length > 1}

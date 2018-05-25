@@ -1,7 +1,28 @@
 .content-container {
   margin: 0 auto;
   padding: 0 $m-size;
-  max-width: 80rem;
+  max-width: 110rem;
+  min-height: 100%;
+}
+
+.content-container__header {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 60rem;
+  min-height: 100%;
+}
+
+.content-container__contact {
+  margin: 0 auto;
+  padding: 0 $m-size;
+  max-width: 50rem;
+  min-height: 100%;
+}
+
+.content-container__footer {
+  margin: 0 auto;
+  padding: 0 $m-size;
+  max-width: 160rem;
   min-height: 100%;
 }
 

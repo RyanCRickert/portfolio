@@ -2,42 +2,38 @@
   background: none;
   border: none;
   border-radius: 10px;
-  color: white;
+  color: $cool-blue;
   display: inline-block;
   font-size: 2.2rem;
   font-weight: 300;
   line-height: 1;
   padding: $s-size;
   text-decoration: none;
-  transition: color 0.5s ease-in-out;
+
   &:hover {
-    color: $gray;
+    color: rgb(0, 50, 70);
     text-decoration: none;
   }
 }
 
 .button-active {
-  animation: flash 5s infinite;
-  background: rgba(black, 0.5);
+  background: $cool-blue;
   color: white;
-  transition: color 0.5s ease-in-out;
+  text-decoration: none;
 }
 
-@keyframes flash {
-0% {
-  color: $gray;
+.button-download {
+  border: 5px solid $off-white;
+  border-radius: 10px;
+  color: $off-white;
+  cursor: pointer;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  user-select: none;
   text-decoration: none;
-}
-25% {
-  color: white;
-  text-decoration: none;
-}
-75% {
-  color: white;
-  text-decoration: none;
-}
-100% {
-  color: $gray;
-  text-decoration: none;
-}
+  width: 160px;
+
+  &:hover {
+    background: rgb(0, 67, 94);
+  }
 }
