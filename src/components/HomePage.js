@@ -36,7 +36,7 @@ export default class HomePage extends React.Component {
         <div className="home-main" ref={(section) => { this.Top = section; }}>
           <div className="home-name">Ryan Rickert</div>
           <div className="home-title">Software Engineer</div>
-          <a href="images/RyanCRickertResume.pdf" download><div className="button-download">Download Resume</div></a>
+          <a href="/images/RyanCRickertResume.pdf" download><div className="button-download">Download Resume</div></a>
         </div>
         <div className="home-about">
           <div className="content-container home-about">
