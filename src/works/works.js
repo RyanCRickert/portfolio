@@ -1,7 +1,7 @@
 export default [{
   name: "Community Cookbook",
   url: "https://communitycookbook.herokuapp.com/",
-  description: "Using the basic framework from Expensify, I created a new app in which authorized users can create and edit recipes for all to see and share.  This project helped to further my knowledge of Firebase and having children communicate with parent components.",
+  description: "Using the basic framework from Expensify, I created a new app where authorized users can create and edit recipes for all to see and share.  This project helped to further my knowledge of Firebase and having children communicate with parent components.",
   classN: "cookbook",
   src: "images/portfolio/cookbook.png",
   github: "https://github.com/RyanCRickert/community-cookbook",
