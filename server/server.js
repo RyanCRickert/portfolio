@@ -1,6 +1,5 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const webpack = require("webpack");
 const nodemailer = require("nodemailer");
 const app = express();
 

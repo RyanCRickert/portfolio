@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "proxy": 8081,
   "scripts": {
     "start": "concurrently \"yarn server\" \"yarn dev-server\"",
     "server": "nodemon server/server.js",
