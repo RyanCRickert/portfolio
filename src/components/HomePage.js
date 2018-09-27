@@ -1,5 +1,7 @@
 import React from "react";
+import { Form, FormGroup, Input, Label, Button } from "reactstrap";
 import scrollToComponent from 'react-scroll-to-component';
+import axios from "axios";
 
 import PortfolioItem from "./PortfolioItem";
 import arrow from "../../public/images/arrow.png";
@@ -13,22 +15,31 @@ export default class HomePage extends React.Component {
     super(props);
 
     this.state = {
+      name: "",
       email: "",
       message: ""
     }
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   };
 
-  onEmailChange = (e) => {
-    const email = e.target.value
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
 
-    this.setState({ email });
-  };
+  async handleSubmit(e) {
+    e.preventDefault();
+    const { name, email, message } = this.state;
+    this.setState({ submitted: true, message: "" });
+    e.target.message = "";
 
-  onEmailMessage = (e) => {
-    const message = e.target.value
-
-    this.setState({ message });
-  };
+    const form = await axios.post("/api/form", {
+      name,
+      email,
+      message
+    })
+  }
 
   render() {
     return (
@@ -97,25 +108,36 @@ export default class HomePage extends React.Component {
         <div className="home-contact">
           <h1 className="underline__alt">Contact Me</h1>
           <div className="home-contact content-container__contact">
-            <form className="home-contact__form" method="POST" action="https://formspree.io/RyanCRickert@gmail.com">
-              <input
-                placeholder="Your email"
+            <Form className="home-contact__form" onSubmit={this.handleSubmit}>
+            <FormGroup>
+              <Label for="name" className="form__label">Name</Label>
+              <Input
+                type="text"
+                name="name"
+                className="home-contact__input"
+                onChange={this.handleChange} />
+            </FormGroup>
+            <FormGroup>
+              <Label for="email" className="form__label">Email</Label>
+              <Input
+                type="email"
                 name="email"
                 className="home-contact__input"
-                onChange={this.onEmailChange}
-              />
-              <textarea
-                placeholder="Your message"
+                onChange={this.handleChange} />
+            </FormGroup>
+            <FormGroup>
+              <Label for="message" className="form__label">Message</Label>
+              <Input
+                type="textarea"
                 name="message"
                 className="home-contact__text"
-                onChange={this.onMessageChange}
-              />
-              <button
-              className="home-contact__button"
-              onClick={(e) => e.preventDefault}
-              disabled={this.state.email.length == 0 && this.state.message.length == 0}
-              >Send</button>
-            </form>
+                value={this.state.message}
+                onChange={this.handleChange} />
+            </FormGroup>
+            <Button disabled={this.state.name == 0 || this.state.email == 0 || this.state.message == 0} className="home-contact__button">
+              {this.state.name == 0 || this.state.email == 0 || this.state.message == 0 ? "Please fill out each form" : "Submit"}
+            </Button>
+            </Form>
           </div>
         </div>
         <div className="home-footer">

@@ -178,6 +178,7 @@
   height: 4rem;
   margin-bottom: 2rem;
   padding: 0 1rem;
+  width: 100%;
 
   @media (max-width: $desktop-breakpoint) {
     margin: 0 2rem 2rem;
@@ -192,6 +193,7 @@
   height: 10rem;
   margin-bottom: 2rem;
   padding: 1rem;
+  width: 100%;
 
   @media (max-width: $desktop-breakpoint) {
     margin: 0 2rem 2rem;
@@ -243,6 +245,7 @@
 }
 
 .home-footer__arrow {
+  cursor: pointer;
   margin: $l-size;
   text-align: center;
 
