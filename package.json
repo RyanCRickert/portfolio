@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently \"yarn server\" \"yarn dev-server\"",
-    "server": "nodemon server/server.js",
+    "server": "nodemon server.js",
     "client": "yarn run start --prefix client",
     "heroku-postbuild": "yarn run build:prod",
     "build:dev": "webpack",
