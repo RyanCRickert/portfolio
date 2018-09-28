@@ -28,18 +28,18 @@ export default class HomePage extends React.Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  async handleSubmit(e) {
-    e.preventDefault();
-    const { name, email, message } = this.state;
-    this.setState({ submitted: true, message: "" });
-    e.target.message = "";
+  // async handleSubmit(e) {
+  //   e.preventDefault();
+  //   const { name, email, message } = this.state;
+  //   this.setState({ submitted: true, message: "" });
+  //   e.target.message = "";
 
-    const form = await axios.post("/api/form", {
-      name,
-      email,
-      message
-    })
-  }
+  //   const form = await axios.post("/api/form", {
+  //     name,
+  //     email,
+  //     message
+  //   })
+  // }
 
   render() {
     return (
