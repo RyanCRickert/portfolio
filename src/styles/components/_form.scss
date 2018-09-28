@@ -14,3 +14,9 @@
 .form__label {
   color: $off-white;
 }
+
+.form-control {
+  @media (max-width: $desktop-breakpoint) {
+    width: 90%;
+  }
+}
