@@ -76,10 +76,7 @@ module.exports = (env) => {
         devServer: {
             contentBase: path.join(__dirname, "public"),
             historyApiFallback: true,
-            publicPath: "/dist/",
-            proxy: {
-                "/api": "http://localhost:8081"
-            }
+            publicPath: "/dist/"
         }
     }
 }
