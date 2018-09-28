@@ -9,6 +9,7 @@ import node from "../../public/images/node.jpg";
 import react from "../../public/images/react.jpg";
 import skills from "../skills/skills";
 import works from "../works/works";
+import ThankYouModal from "./ThankYouModal";
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -17,11 +18,13 @@ export default class HomePage extends React.Component {
     this.state = {
       name: "",
       email: "",
-      message: ""
+      message: "",
+      submitted: false
     }
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.closeThankYouModal = this.closeThankYouModal.bind(this);
   };
 
   handleChange = (e) => {
@@ -41,9 +44,14 @@ export default class HomePage extends React.Component {
     })
   }
 
+  closeThankYouModal() {
+    this.setState({ submitted: false });
+  }
+
   render() {
     return (
       <div>
+        <ThankYouModal closeThankYouModal={this.closeThankYouModal} submitted={this.state.submitted} />
         <div className="home-main" ref={(section) => { this.Top = section; }}>
           <div className="home-name">Ryan Rickert</div>
           <div className="home-title">Software Engineer</div>
@@ -52,7 +60,7 @@ export default class HomePage extends React.Component {
         <div className="home-about">
           <div className="content-container home-about">
             <div className="home-about__left">
-              <h2 className="underline">About Me</h2>
+              <h1 className="underline">About Me</h1>
             </div>
             <div className="home-about__right">
               I am a React web developer with a bit of NodeJS experience. I received my bachelor's degree in Chemistry 

@@ -1,43 +1,108 @@
 .ReactModalPortal > div {
     opacity: 0;
-}
-
-.ReactModalPortal .ReactModal__Overlay {
+  }
+  
+  .ReactModalPortal .ReactModal__Overlay {
     align-items: center;
     display: flex;
     justify-content: center;
     transition: opacity 200ms ease-in-out;
-}
-
-.ReactModalPortal .ReactModal__Overlay--after-open {
+  }
+  
+  .ReactModalPortal .ReactModal__Overlay--after-open {
     opacity: 1;
-}
-
-.ReactModalPortal .ReactModal__Overlay--before-close {
+  }
+  
+  .ReactModalPortal .ReactModal__Overlay--before-close {
     opacity: 0;
-}
-
-.modal {
-    background: $light-blue__indecision;
-    color: white;
-    display: block;
-    margin: auto;
+  }
+  
+  .modal {
+    background: $dark-gray;
+    color: $off-white;
     max-width: 30rem;
     outline: none;
     padding: $l-size;
-    position: relative;
     text-align: center;
-    user-select: none;
-}
-
-.modal__title {
-    font-size: 1.17em;
+  }
+  
+  .modal__title {
     margin: 0 0 $s-size 0;
-}
-
-.modal__body {
+  }
+  
+  .modal__body {
     font-size: 2rem;
     font-weight: 300;
     margin: 0 0 $l-size 0;
     word-break: break-all;
-}
+  }
+  
+  .modal-thank {
+    background: #006c97;
+    border: 2px solid black;
+    color: $off-white;
+    max-width: 60rem;
+    outline: none;
+    padding: $m-size;
+    text-align: center;
+  }
+  
+  .modal-thank__body {
+    margin-bottom: $l-size;
+  }
+  
+  .modal-remove {
+    background: $dark-gray;
+    color: $off-white;
+    max-width: 60rem;
+    outline: none;
+    padding: $m-size;
+    text-align: center;
+  }
+  
+  .modal-remove__header {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .no-margin {
+    margin: 0;
+  }
+  
+  .modal-button {
+    margin: $m-size 0;
+  }
+  
+  .modal-button__group {
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  .modal-button__margin-top {
+    margin-top: $m-size;
+  }
+  
+  .modal__error {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin: 0 0 1.6rem;
+  }
+  
+  .modal-google {
+    background: #666;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1;
+    margin-top: 1.6rem;
+    padding: 1.2rem;
+    text-decoration: none;
+    user-select: none;
+  }
+
+  .modal-button {
+      color: white;
+  }
