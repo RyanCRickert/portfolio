@@ -12,7 +12,6 @@
     "start-dev": "concurrently \"yarn server\" \"yarn dev-server\"",
     "server": "nodemon server.js",
     "client": "yarn run start --prefix client",
-    "heroku-postbuild": "yarn run build:prod",
     "build:dev": "webpack",
     "build": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
