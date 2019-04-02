@@ -45,11 +45,11 @@ export default [{
   tags: ["Javascript", "CSS", "HTML", "First Site", "Fun", "Learning Experience"]
 },
 {
-  name: "Chat App",
-  url: "https://thawing-fortress-91926.herokuapp.com",
-  description: "This is a program which I wrote in the NodeJS course.  While it is just a simple chat app, it showed me the basics of how the backend development works.  I went through the process of setting up the different http response codes and tested them using Postman.",
+  name: "Button War",
+  url: "http://button-war.herokuapp.com",
+  description: "I created this website to be a one of those time wasting websites.  It is just a simple button which updates a firebase database and displays the total number of clicks to the screen.  Users can also login using their Google login to see how many times they have clicked the button.",
   classN: "node",
-  src: "images/portfolio/node.png",
-  github: "https://github.com/RyanCRickert/node-chat-app",
-  tags: ["NodeJS", "CSS"]
+  src: "images/portfolio/clicker.png",
+  github: "https://github.com/RyanCRickert/ButtonWar",
+  tags: ["React", "CSS", "Firebase"]
 }]
