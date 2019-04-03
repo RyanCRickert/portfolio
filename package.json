@@ -64,8 +64,8 @@
     "url-loader": "^1.0.1",
     "uuid": "^3.2.1",
     "validator": "^9.4.1",
-    "webpack": "^4.4.1",
-    "webpack-cli": "^2.0.13"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   },
   "devDependencies": {
     "cross-env": "^5.1.4",
