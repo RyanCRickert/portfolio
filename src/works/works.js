@@ -51,5 +51,14 @@ export default [{
   classN: "node",
   src: "images/portfolio/clicker.png",
   github: "https://github.com/RyanCRickert/ButtonWar",
-  tags: ["React", "CSS", "Firebase"]
+  tags: ["React", "CSS", "Firebase", "Fun"]
+},
+{
+  name: "Stocker",
+  url: "https://stock-checker-practice.herokuapp.com/",
+  description: "The idea for this app was to get some exposure to D3 and strengthen my working knowledge of making API calls.",
+  classN: "node",
+  src: "images/portfolio/stocker.png",
+  github: "https://github.com/RyanCRickert/stock-checker",
+  tags: ["React", "CSS", "D3", "API"]
 }]
