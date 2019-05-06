@@ -8,8 +8,8 @@ export default ({ name, url, description, src, classN , alt, internal, github, t
     <div className="portfolio-item__text">
       <h2>{name}</h2>
       {description}<br/>
-      {internal ? <Link to="/indecision">View Project</Link> : <a href={url} target="_blank">View Project</a>}&nbsp;&nbsp;&nbsp;
-      <a href={github} target="_blank"><FontAwesome name="github"/></a><br/>
+      {internal ? <Link to={url}>View Project</Link> : <a href={url} target="_blank">View Project</a>}&nbsp;&nbsp;&nbsp;
+      {github && <React.Fragment><a href={github} target="_blank"><FontAwesome name="github"/></a><br/></React.Fragment>}
       <div className="portfolio-item__tags">
         {tags.map((item) => (
           <li key={item} className="portfolio-item__tag">{item}</li>

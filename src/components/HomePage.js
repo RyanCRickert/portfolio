@@ -63,14 +63,11 @@ export default class HomePage extends React.Component {
               <h1 className="underline">About Me</h1>
             </div>
             <div className="home-about__right">
-              I am a React web developer with a bit of NodeJS experience. I received my bachelor's degree in Chemistry 
-              from the University of Houston Downtown in 2015. A few months later my first son was born and soon after I found 
-              a lab tech position. After about a year, the demanding schedule of 12 hour day/night shifts while working mostly 
-              weekends began to take its toll on my sanity and family time so I started to teach myself how to code in my free 
-              time. I have spent around a year self-teaching with sites like Khan Academy, CodeAcademy, FreeCodeCamp, Coursera 
-              and some other personal projects. At the beginning of March 2018 I felt the need to accelerate my learning so I 
-              quit my job and purchased two Udemy courses, one for NodeJS and one for ReactJS. Now that I have finished both 
-              courses I am focusing on ReactJS.
+              I am a React web developer with a dash of NodeJS experience which I use to build fullstack websites.
+                I received my bachelor's degree in Chemistry from the University of Houston Downtown in 2015, 
+              but the chaotic schedule of lab tech life led me to following my passion of working with computers.
+                I first spent around a year self-teaching with sites like Khan Academy, CodeAcademy, FreeCodeCamp, Coursera 
+              but I am currently building new apps to help further my learning and fuel my passion.
             </div>
           </div>
         </div>
